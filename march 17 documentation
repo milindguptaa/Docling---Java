@@ -1,0 +1,17 @@
+# Meeting Notes — 3/17
+
+## Summary
+Eric indirectly rejected the idea of using ProcessBuilder (running the Java program in a separate process).
+
+However, he pointed us to a relevant GitHub repository:
+- https://github.com/fniephaus/graalpy-spring-boot-summarize?tab=readme-ov-file
+
+This repo appears to implement something similar to what we are trying to build, but:
+- It uses a smaller, non-docking-style library
+- It is built with Spring Boot
+- It uses **markitdown**, which is a lightweight alternative to **docling** (associated with Microsoft)
+
+## Idea (Nick)
+Instead of importing the entire **docling** library, we could:
+- Focus only on importing **PDF conversion functionality**
+- This may reduce dependency overhead and simplify setup
