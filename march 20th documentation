@@ -1,0 +1,11 @@
+# 3/20
+
+## Colin’s New Commits
+
+### Commit 1: Add Gradle-Based Docling Smoke Test
+A new Gradle subproject was included, which can set up a Python environment, install Docling, and then perform a simple test to make sure that Docling can be loaded from Java.
+
+### Commit 2: Expand Docling Test Scripts in Gradle and Step 3
+The Gradle test was significantly improved to do much more than just check that Docling can be loaded from Java. It can now take a file as input and convert it to markdown or text, returning the results as JSON.
+
+The Step 3 test was simplified back to just checking that Docling can be loaded from Java.
