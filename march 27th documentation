@@ -1,0 +1,17 @@
+# 3/27
+
+## Progress Update
+
+Connor found documentation about C compatibility in GraalVM and is attempting to download it, but it is not working yet.
+
+Nick is trying to install PyTorch using pip, but that installation is currently failing.
+
+Overall, the team is working to get the torch function in Docling to run on GraalVM.
+
+## Successfully Working in GraalVM So Far
+- Pandas  
+- NumPy  
+- Docling Parse (not its dependencies)
+
+## Issue Encountered
+Nick found that Docling requires PyTorch 2.2.2, but GraalVM can only import version 2.2.1. He later realized that this limitation applies only to macOS.
