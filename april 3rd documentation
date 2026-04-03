@@ -1,0 +1,12 @@
+Currently, GraalPy is attempting to support the full CPython runtime.
+
+**CPython callbacks** refer to Python-wrapped C functions that return C-allocated memory back to the Python layer.
+
+CPython itself runs correctly, but issues arise when running within the GraalVM environment.
+
+One possible approach is to enable the VM to directly execute C and C++ libraries instead of replicating full CPython behavior.
+
+## Issues
+- Python callbacks
+- Compatibility with C libraries in general
+- Scale: the relevant libraries collectively contain millions of lines of code
